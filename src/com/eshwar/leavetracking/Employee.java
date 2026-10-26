@@ -31,5 +31,18 @@ public class Employee {
 	public int getLeaveBalance() {
 		return leaveBalance;
 	}
+	
+	public void applyLeave(int days) {
+		if(this.leaveBalance == 0) {
+			throw new IllegalArgumentException("No leaves remaining");
+		}
+		if(days>leaveBalance) {
+			throw new IllegalArgumentException("You cannot get more leave than y0ur balance leaves");
+		}
+		if(days<=0) {
+			throw new IllegalArgumentException("You cannot ask such leaves");
+		}
+		leaveBalance-=days;
+	}
 
 }
