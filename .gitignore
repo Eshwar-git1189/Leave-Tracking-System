@@ -1,5 +1,12 @@
+# Java compiled files
 /bin/
+*.class
+
+# Eclipse configuration
 /.classpath
 /.project
 /.settings/
-*.class
+
+# IntelliJ IDEA configuration
+/.idea/
+*.iml
