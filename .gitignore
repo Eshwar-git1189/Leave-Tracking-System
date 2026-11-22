@@ -1,12 +1,13 @@
 # Java compiled files
 /bin/
+/out/
 *.class
 
-# Eclipse configuration
-/.classpath
-/.project
-/.settings/
+# Eclipse
+.classpath
+.project
+.settings/
 
-# IntelliJ IDEA configuration
-/.idea/
+# IntelliJ
+.idea/
 *.iml
